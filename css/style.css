@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+:root{
+    --main-color:#f50;
+    --dark-gray:rgb(78, 78, 78);
+    --light-gray:rgb(117, 117, 117);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s linear;
+    border:none;
+}
+*::selection{
+    background: var(--main-color);
+    color: #fff;
+  }
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  body{
+    background: #f7f7f7;
+    width:90%;
+    position: relative;
+    margin: 0 auto;
+  }
+.grid{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 7vh 93vh;
+    grid-template-areas: 'header aside'
+                          'section aside';
+}
+
+header{
+    grid-area: header;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+    background:rgb(223, 221, 221);
+}
+  header nav{
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+      width:100%;
+      background:rgb(32, 31, 31) ;
+  }
+  #nav1{
+      width:12%;
+      height:7vh;
+      display:flex;
+      align-items:center;
+      position: relative;
+  }
+  #logo{
+    width:50%;  
+    height:100%;
+    background:var(--main-color);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.fa-soundcloud{
+    color: #fff;
+    font-size: 4.6rem;
+    font-weight: bolder;
+}
+#stream{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: var(--dark-gray);
+    color:var(--light-gray);
+    font-weight: bold;
+}
+#nav2{
+    width:88%;
+    height:7vh;
+    display:flex;
+    align-items:center;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+#nav2 > div{
+    display: flex;
+    align-items:center;
+}
+#nav2 > div .explore{  
+    height:100%;
+    color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    margin-right: 4em;
+}
+.search-box{
+    border-radius:20px;
+    width:300px;
+    height:4vh;
+    background:var(--dark-gray);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 1em;
+    font-size: 1.2em;
+    color: var(--light-gray);
+
+}
+.search-box input[type="text"]{
+    background:var(--dark-gray);
+    height:100%;
+    border-radius:20px;
+    width:90%;
+}
+.search-box input[type="text"]:focus {
+    color: #fff;
+    font-size: 1.2em;
+    background:var(--dark-gray);
+}
+#icone .fas{
+color: #fff;
+font-size:1.6em;
+margin-right: 2em;
+}
+.img-container{
+    width:100%;
+    height: 60vh;
+    position: relative;
+}
+.img-banner{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caption-banner{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tittle-img{
+    color: #000;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.tittle-img h1{
+    color: #000;
+    font-size: 3em;
+}
+.caption-banner button{
+    background-color:var(--main-color);
+    color: #000;
+    padding: .6em 1.4em;
+    border-radius: 4px;
+    margin-top:1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  #upload{
+      height:7vh;
+      width:100%;
+      background: var(--main-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  #upload a{
+    font-weight: bold;
+    color:#fff;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loader{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 10000;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .loader.fade-out{
+    top: -120%;
+  }

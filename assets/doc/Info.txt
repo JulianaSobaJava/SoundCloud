@@ -1,0 +1,18 @@
+//1<a href='https://br.freepik.com/fotos-vetores-gratis/musica'>Música vetor criado por upklyak - br.freepik.com</a>
+
+//2<a href='https://br.freepik.com/fotos-vetores-gratis/musica'>Música foto criado por lookstudio - br.freepik.com</a>
+
+//3<a href='https://br.freepik.com/fotos-vetores-gratis/musica'>Música vetor criado por upklyak - br.freepik.com</a>
+
+
+const arrayImage = [ './assets/image/imagem2.jpg',
+                       './assets/image/imagem3.jpg',
+                       './assets/image/imagem4.jpg',
+                       './assets/image/imagem5.jpg'];
+
+
+                       function changeImg(){
+    const change = Math.floor(Math.random() * arrayImage.length);
+    document.querySelector('.img-banner').setAttribute('src', arrayImage[change]);
+    console.log(change);
+}changeImg();
