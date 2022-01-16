@@ -122,13 +122,13 @@ aside{
     color: var(--light-gray);
 
 }
-.search-box input[type="text"]{
+.search-box #search{
     background:var(--dark-gray);
     height:100%;
     border-radius:20px;
     width:90%;
 }
-.search-box input[type="text"]:focus {
+.search-box #search:focus {
     color: #fff;
     font-size: 1.2em;
     background:var(--dark-gray);
@@ -142,6 +142,7 @@ margin-right: 2em;
     width:100%;
     height: 60vh;
     position: relative;
+    margin-bottom:5em;
 }
 .img-banner{
     width:100%;

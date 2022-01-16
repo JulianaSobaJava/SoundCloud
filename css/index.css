@@ -1,0 +1,52 @@
+:root{
+    --main-color:#f50;
+    --dark-gray:rgb(78, 78, 78);
+    --light-gray:rgb(117, 117, 117);
+}
+
+.song{
+    display: flex;
+    width:80%;
+    position: relative;
+    left: 18%;
+    height:14em;
+    margin-right: 20px;
+    margin-bottom: 3em;
+    border-bottom: 1px solid rgb(231, 229, 229);
+}
+.song-content{
+    display: flex;
+    width: 100%;
+    height:13.5em;
+    
+    
+}
+.artist-info{
+    align-items:center;
+    margin-top: 10px;
+    height: 6em;
+}
+.artist-info .playpause-track i{
+    margin-right: .4em;
+    color:var(--main-color);
+}
+.info{
+   flex-direction: column;
+}
+.musci-tittle, .artist-name{
+    font-size:2em;
+}
+.all-controls{
+    flex-direction:column;
+}
+
+.slider_container, .all-controls, .artist-info, .info{
+    display: flex;
+}
+.song-artist{
+    height: 100%;
+    margin-right: 2em;
+}
+ .song-artist img{
+    height: 100%;
+}

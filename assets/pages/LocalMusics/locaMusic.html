@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoundCloud App to listen music anywhere">
+    <meta author="Java, Máquina, Nika e Leo">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" href="../../image/icon.png">
+    <script src="https://kit.fontawesome.com/5b3cdbeeda.js" crossorigin="anonymous"></script>
+    <title>SoundCloud</title>
+</head>
+<body>  
+    <div class="grid">
+        <header>
+            <nav>
+                    <div id="nav1">
+                <a id="logo" href="../../../Index.html"><i class="fab fa-soundcloud"></i></a>
+               <a href="http:/" id="stream">STREAM</a>
+             </div>
+            <div id="nav2">
+                <div>
+                    <a href="http" class="explore">EXPLORE</a>
+                    <div class="search-box">
+                        <input type="search" id="search">
+                        <i class="fas fa-search"></i></div>
+                </div>
+            <div id="icone">
+               <a href="http:"> <i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                 <a href="#"><i class="fas fa-cog"></i></a>
+                 <a href="./locaMusic.html"> <i class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </div>
+        </nav>
+        </header>
+            <section>
+                <audio src="" id="audio-source"></audio>
+    
+
+    <!-- home section -->
+
+    <section class="home-section">
+        <!-- carousel -->
+        <div class="carousel">
+            <img src="assets/images/cover 1.png" class="active" alt="">
+            <img src="assets/images/cover 2.png" alt="">
+            <img src="assets/images/cover 3.png" alt="">
+        </div>
+
+        <!-- playlists
+        <h1 class="heading">recently played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/cover 9.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 2.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">BTN collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">bolywood hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 5.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">justin bieber</p>
+            </div>
+        </div> -->
+
+        <!-- <h1 class="heading">based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 12.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">BTN collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 13.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">bolywood hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 1.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover 3.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">justin bieber</p>
+            </div>
+        </div> -->
+    </section> 
+
+    <section class="music-player-section">
+
+        <img src="assets/images/back.png" class="back-btn icon hide">
+        <img src="assets/images/nav.png" class="nav-btn icon hide">
+
+        <h1 class="current-song-name">song 1</h1>
+        <p class="artist-name hide">artist 1</p>
+
+        <img src="assets/images/cover 1.png" class="cover hide">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <section class="playlist">
+
+        <img src="assets/images/back.png" class="back-btn icon">
+
+        <h1 class="title">playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/cover 1.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 1</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 2.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 2</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 3.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 3</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 4.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 4</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 5.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 5</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 6.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 6</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 7.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 7</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/cover 8.png" alt="" srcset="">
+                <i class="fas fa-pause"></i>
+            </div> 
+            <p class="name">song 8</p>
+        </div>
+
+
+    </section>
+
+            </section>
+    
+            <aside>
+                <div id="upload">
+                    <a href="#">UPLOAD</a>
+                </div>
+    
+            </aside>
+    </div> 
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
