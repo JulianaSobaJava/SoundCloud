@@ -97,7 +97,6 @@
     left: 0;
     backdrop-filter: blur(50px);
     transition: 1s;
-    background:yellow;
 } 
 
 .music-seek-bar{
@@ -108,7 +107,6 @@
     height: 8px;
     background: var(--secondary-color);
     overflow: hidden;
-    background-color: orangered;
 }
 
 .music-seek-bar::-webkit-slider-thumb{

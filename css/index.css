@@ -6,40 +6,29 @@
 
 .song{
     display: flex;
-    width:80%;
+    width:100%;
     position: relative;
-    left: 18%;
-    height:14em;
-    margin-right: 20px;
+    height:16em;
     margin-bottom: 3em;
     border-bottom: 1px solid rgb(231, 229, 229);
 }
 .song-content{
     display: flex;
     width: 100%;
-    height:13.5em;
-    
-    
+    height:14em;
 }
 .artist-info{
     align-items:center;
     margin-top: 10px;
     height: 6em;
 }
-.artist-info .playpause-track i{
-    margin-right: .4em;
-    color:var(--main-color);
-}
-.info{
+.info, .all-controls{
+    width:100%;
    flex-direction: column;
 }
 .musci-tittle, .artist-name{
     font-size:2em;
 }
-.all-controls{
-    flex-direction:column;
-}
-
 .slider_container, .all-controls, .artist-info, .info{
     display: flex;
 }
@@ -49,4 +38,52 @@
 }
  .song-artist img{
     height: 100%;
+}
+.hide{
+    display: none;
+}
+.buttons{
+    cursor: pointer;
+    height:60px;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: .6em;
+    background:yellow;
+}
+.fa-play-circle{
+    color: var(--main-color);
+    font-size: 4em;
+}
+.musicPlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.current-music{
+    position:fixed;
+    width: 100%;
+    left: 0;right: 0;
+    top: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    border-top: 1px solid rgb(209, 209, 209);
+}
+.current-music audio{
+    width: 40%;
+    background-color: orangered;
+};
+
+.current-music audio::-webkit-media-controls-enclosure,
+.current-music audio::-moz-media-controls-enclosure,
+ .current-music audio::-ms-media-controls-enclosure,
+ .current-music audio::-o-media-controls-enclosure{
+    border-radius: 0;
 }

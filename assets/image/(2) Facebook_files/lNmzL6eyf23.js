@@ -1,5 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["IuZItWc"]); }
-
-__d("AdditionalProfilePlusCreationRootQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="3516763475100273"}),null);
-__d("AdditionalProfilePlusCreationRootQuery$Parameters",["AdditionalProfilePlusCreationRootQuery_facebookRelayOperation"],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:b("AdditionalProfilePlusCreationRootQuery_facebookRelayOperation"),metadata:{},name:"AdditionalProfilePlusCreationRootQuery",operationKind:"query",text:null}};e.exports=a}),null);
-__d("AdditionalProfilePlusCreationRoot.entrypoint",["AdditionalProfilePlusCreationRootQuery$Parameters","JSResourceForInteraction","WebPixelRatio"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(){return{queries:{additionalProfilePlusCreationRootQueryReference:{parameters:b("AdditionalProfilePlusCreationRootQuery$Parameters"),variables:{scale:d("WebPixelRatio").get()}}}}},root:c("JSResourceForInteraction")("AdditionalProfilePlusCreationRoot.react").__setRef("AdditionalProfilePlusCreationRoot.entrypoint")};g["default"]=a}),98);
